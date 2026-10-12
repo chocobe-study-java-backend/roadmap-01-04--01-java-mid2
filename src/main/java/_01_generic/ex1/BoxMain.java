@@ -1,4 +1,4 @@
-package generic;
+package _01_generic.ex1;
 
 public class BoxMain {
 
