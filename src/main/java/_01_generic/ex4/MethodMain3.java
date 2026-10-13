@@ -1,4 +1,4 @@
-package _01_generic.test.ex4;
+package _01_generic.ex4;
 
 import _01_generic.animal.Cat;
 import _01_generic.animal.Dog;

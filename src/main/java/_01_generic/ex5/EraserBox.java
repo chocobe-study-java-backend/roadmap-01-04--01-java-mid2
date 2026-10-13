@@ -1,4 +1,4 @@
-package _01_generic.test.ex5;
+package _01_generic.ex5;
 
 public class EraserBox<T> {
 
