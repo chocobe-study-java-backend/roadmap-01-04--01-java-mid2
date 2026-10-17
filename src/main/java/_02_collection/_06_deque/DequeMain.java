@@ -1,0 +1,36 @@
+package _02_collection._06_deque;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class DequeMain {
+
+    static void main(String[] args) {
+        // LinkedList를 써도 되지만, 느리다
+        // Deque<Integer> deque = new LinkedList<>();
+
+        Deque<Integer> deque = new ArrayDeque<>();
+
+        // 데이터 추가
+        deque.offerFirst(1);
+        System.out.println("deque = " + deque);
+        deque.offerFirst(2);
+        System.out.println("deque = " + deque);
+
+        deque.offerLast(3);
+        System.out.println("deque = " + deque);
+        deque.offerLast(4);
+        System.out.println("deque = " + deque);
+
+        // 다음 꺼낼 데이터 확인(꺼내지 않고 단순 조회만)
+        System.out.println("deque.peekFirst() = " + deque.peekFirst());
+        System.out.println("deque.peekLast() = " + deque.peekLast());
+
+        // 데이터 꺼내기
+        System.out.println("deque.pollFirst() = " + deque.pollFirst());
+        System.out.println("deque.pollFirst() = " + deque.pollFirst());
+        System.out.println("deque.pollLast() = " + deque.pollLast());
+        System.out.println("deque.pollLast() = " + deque.pollLast());
+        System.out.println("deque = " + deque);
+    }
+}
